@@ -1,0 +1,36 @@
+<html>
+<head>                                                                                   
+<title>My Resume</title>
+</head>
+<body>
+<h1>PORTFOLIO</h1>
+<h1>Sriraman K</h1>                                                              
+<img src="C:\Users\REC\Downloads\profile.jpg"align="right" style="width:130px;height:130px;">
+<h4>Schooling:Vidya Mandhir school</h4>
+<h4>College:Rajalakshmi Engineering College</h4>
+<h4>Batch:2022-2026 </h4>
+<h4>B.E Computer Science and Engineering</h4>
+<h4>Data science intern at zoho</h4>
+<h3>Technical Skills</h3>
+<h4>Programming Languages: Python, Java, C++
+<h4>Tools & Technologies: UIpath, microsoft Azure and other microsoft tools.
+<hr>
+<h2>Personal details</h2>
+<h3>About Me</h3>
+<p> I am a dedicated and driven Computer Science Engineering student with a passion for solving problems through innovative technology solutions. Currently completed a Bachelor’s degree in Computer Science Engineering at Rajalakshmi Engineering College, I have developed a solid foundation in programming languages like Java, Python, and C++
+
+Beyond my coursework, I actively seek opportunities to apply my knowledge in real-world settings. I have engaged as a data science intern in zoho . These experiences have not only honed my technical abilities but also enhanced my collaborative and problem-solving skills.
+
+I am particularly interested in data science ,machine learning, cybersecurity, and software development and am eager to contribute my skills to organizations focused on developing cutting-edge AI applications and startups driving technological innovation
+
+With a strong academic background and practical experience, I am prepared to tackle challenges and contribute effectively to your team. I am enthusiastic about leveraging technology to make a positive impact and look forward to enhance my skills.</p>
+<h3>Contact Details</h3>
+<h4> Email:220701288@rajalakshmi.edu.in</h4>
+<h4> Phone no:6379148919 </h4>
+<hr>
+<h2>Extra Curicullar Activities</h2>
+<p> I was part of the college basketball team and Participation in coding competitions such as ACM ICPC, Codeforces, or Hackathons demonstrates your problem-solving skills and ability to work under pressure.
+Contributing to open-source projects on platforms like GitHub showcases your coding abilities, collaboration skills, and commitment to learning from the developer community.
+Involvement in a computer science or technology-related club or organization, where you might hold a leadership position or actively participate in organizing events, workshops, or coding boot camps.</p>
+</body>
+</html>
