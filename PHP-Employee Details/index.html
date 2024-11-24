@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"], button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #0056b3;
+        }
+
+        #employee-list {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-top: 10px;
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+        }
+
+    </style>
+    <script>
+        function showEmployees() {
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "fetch_employees.php", true); // Fetch employee data
+
+            // Set up a function to handle the response
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    document.getElementById("employee-list").innerHTML = xhr.responseText; // Update employee list
+                } else {
+                    alert("Error fetching employee data.");
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Employee Details Form</h1>
+    <form action="insert.php" method="POST">
+        <label for="ename">Employee Name:</label>
+        <input type="text" id="ename" name="ename" required><br>
+
+        <label for="desig">Designation:</label>
+        <input type="text" id="desig" name="desig" required><br>
+
+        <label for="dept">Department:</label>
+        <input type="text" id="dept" name="dept" required><br>
+
+        <label for="doj">Date of Joining:</label>
+        <input type="date" id="doj" name="doj" required><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" step="0.01" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Employee List</h2>
+    <button onclick="showEmployees()">Show Employees</button> <!-- Button to show employee list -->
+    <div id="employee-list">
+        <!-- Employee list will be loaded here -->
+    </div>
+
+    <h2>Update Employee Salary</h2>
+    <form action="update.php" method="POST">
+        <label for="empid">Employee ID:</label>
+        <input type="number" id="empid" name="empid" required><br>
+
+        <label for="new_salary">New Salary:</label>
+        <input type="number" id="new_salary" name="new_salary" step="0.01" required><br>
+
+        <input type="submit" value="Update Salary">
+    </form>
+</body>
+</html>
